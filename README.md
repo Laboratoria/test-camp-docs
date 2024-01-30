@@ -1,52 +1,40 @@
-# reveal-md-github-pages
+# Test Camp Baseline Docs
 
-Use this template to automatically deploy your [reveal-md](https://github.com/webpro/reveal-md) presentations to github-pages.
+Sesión de Activación: 30 minutos - 60 minutos
 
-## Demo
+## La importancia de las pruebas en JavaScript
 
-* see the example [here](https://gaerfield.github.io/reveal-md-github-pages/)
+- Garantizar la calidad del código desde el principio.
+- Prevenir errores antes de que el código vaya a producción.
+- Facilitar la integración y despliegue continuo de forma segura.
 
-## Get started
+## Qué aportan las pruebas a nuestro código
 
-* just press this nice & friendly green button
+- Verificación de que las funciones realizan lo que se espera de ellas (Validación de que el código cumple con los requisitos funcionales).
+- Servir como documentación detallada de los casos de uso y comportamientos esperados.
+- Facilidad para realizar cambios y refactorizaciones con la seguridad de que no se introducen errores.
 
-![nice & friendly green button](img/1_pressButton.png)
+## Posibilidades que ofrecen las pruebas en JavaScript
 
-* give your new repo a name
-* keep it public! (or git will deny to publish it)
-* choose 'gh-pages' to be the public-branch by:
-  * first switching to master
-  * and then switching back to gh-pages
-  * github-Bug? ¯\\_(ツ)_/¯
+- Fomentar el Desarrollo Guiado por Pruebas (TDD) para un proceso de desarrollo más estructurado.
+- Utilizar Jest como herramienta principal para pruebas en Vanilla JavaScript.
+- Integrar pruebas automatizadas en flujos de trabajo de CI/CD.
+- Automatizar las pruebas unitarias y de integración para mantener la integridad del código.
 
-![settings](img/2_settings.png)
+## CONCEPTOS CLAVE
 
-## writing content
+### Ideas fundamentales para internalizar
 
-* edit the markdown-file `slides.md`
-* find all configurations on [reveal-md](https://github.com/gaerfield/reveal-md-github-pages)
+- "Tus pruebas son un reflejo de tus historias de usuario (specs)."
+- "Realiza commits frecuentes y prueba cada cambio significativo."
+- "Empieza cada sesión de codificación con un estado limpio y prueba después de resolver cada conflicto."
+- "Nunca comprometas código a la rama principal sin pruebas adecuadas."
+- "Minimiza las divergencias para reducir los conflictos y facilitar la integración de cambios."
 
-## Customizations
+## Algunas referencias y recursos en ES y PT
 
-* I changed a whee-bit the defaults
-* custom.css:
-  * has some additional configs (who needs borders around pictures)
-  * just remove the content, if it not suits you
-  * but keep the file, or the build will fail
-* includes of markdown files
-  * split up the presentation into multiple documents (useful for large presentations)
-  * an include is defined by `{{path/to/include.md}}`
-* embed small [plantuml](https://plantuml.com/)-diagrams into the presentation
-* included scripts are configured in includes.js
-  * clear the content, if customizations not needed (but keep the file!)
-
-## view changes locally
-
-* to view the presentation locally the start of a server is needed
-* docker
-  * a `docker-compose.yml` is part of the repository
-  * call `docker-compose up` and open [http://localhost:1948/slides.md]
-* npm
-  * install reveal-md within repository `npm install reveal-md`
-  * and then call `./node_modules/.bin/reveal-md --preprocessor includes.js --css custom.css slides.md`
-  * the browser should open automatically
+- [https://4geeks.com/es/lesson/how-to-create-unit-testing-with-Javascript-and-Jest-es](https://4geeks.com/es/lesson/how-to-create-unit-testing-with-Javascript-and-Jest-es)
+- [https://kinsta.com/es/blog/jest/](https://kinsta.com/es/blog/jest/)
+- [https://www.testim.io/blog/jest-testing-a-helpful-introductory-tutorial/](https://www.testim.io/blog/jest-testing-a-helpful-introductory-tutorial/ )
+- [https://www.devmedia.com.br/testes-unitarios-em-javascript-introducao/31510](https://www.devmedia.com.br/testes-unitarios-em-javascript-introducao/31510)
+- [https://awari.com.br/guia-completo-de-testes-unitarios-para-desenvolvedores-frontend/?utm_source=blog&utm_campaign=projeto+blog&utm_medium=Guia%20Completo%20De%20Testes%20Unit%C3%A1rios%20Para%20Desenvolvedores%20Frontend](https://awari.com.br/guia-completo-de-testes-unitarios-para-desenvolvedores-frontend/?utm_source=blog&utm_campaign=projeto+blog&utm_medium=Guia%20Completo%20De%20Testes%20Unit%C3%A1rios%20Para%20Desenvolvedores%20Frontend)
