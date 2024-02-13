@@ -1,0 +1,96 @@
+---
+title: Testing en Laboratoria
+format: 
+  revealjs:
+    theme: [moon, custom.scss]
+---
+
+# Testing
+
+Testing es el proceso de asegurar la calidad del software, revelando su solidez en cada ejecución.
+
+![](./img/jest-js-icon.svg){fig-alt="Jest Logo" height=200}
+
+
+**\< Laboratoria \>**
+
+
+## _“¿Por qué la mayoría de lxs desarrolladorxs temen realizar cambios continuos en su código? ¡Tienen miedo de romperlo! ¿Por qué tienen miedo de romperlo? Porque no tienen test.”_
+
+--Robert C. Martin, Clean Coder, The: A Code of Conduct for Professional Programmers
+
+## Función Suma
+
+![](./img/funcion_suma.svg){fig-alt="Función suma" height=100%}
+
+# Historias de Terror <br> 👻 💀 👻
+
+## Ariane 5 (1996)
+
+El cohete Ariane 5 explotó 40 segundos después de su lanzamiento debido a un error en el software. El error fue causado por la conversión de un número de 64 bits a un número de 16 bits, lo que resultó en un desbordamiento de enteros.
+
+*Con tests, este error podría haber sido detectado antes del lanzamiento.*
+
+## Therac-25 (1985-1987)
+
+El Therac-25 fue un dispositivo de radioterapia utilizado para el tratamiento de cáncer. Debido a errores en el software y la falta de testing adecuado, se produjeron varios incidentes en los que los pacientes recibieron dosis de radiación letales.
+
+*Con tests, estos errores podrían haber sido detectados antes de que el dispositivo fuera utilizado en pacientes.*
+
+
+## Knight Capital Group (2012)
+
+La empresa de trading de alta frecuencia Knight Capital Group perdió \$440 millones en 45 minutos debido a un error en el software. El error fue causado por una actualización de software que no fue probada adecuadamente, lo que llevó a la ejecución de operaciones no deseadas.
+
+*Con los tests adecuados, este error podría haber sido detectado antes de que el software fuera puesto en producción.*
+
+
+# Cultura de Testing en Empresas
+
+## Google
+
+Google es conocido por realizar extensas pruebas en sus productos y servicios, como Google Search, Gmail y Android. Utilizan un enfoque llamado "Testing on the Toilet" (Pruebas en el Baño), donde promueven la cultura de pruebas entre sus desarrolladores. <br><br>🚽
+
+## Facebook
+
+Facebook utiliza un enfoque llamado "Test-Driven Development" (Desarrollo Dirigido por Pruebas) para desarrollar sus productos. Esto significa que escriben pruebas antes de escribir el código, lo que les permite asegurarse de que el código cumple con los requisitos antes de ser implementado.
+
+## Amazon
+
+Amazon utiliza un enfoque llamado "Chaos Engineering" (Ingeniería del Caos) para probar la resiliencia de sus sistemas. Esto implica la introducción de fallos en sus sistemas para ver cómo se comportan en situaciones inesperadas.
+
+Siguen enfoques de desarrollo orientados a pruebas para garantizar la calidad del software.
+
+
+## Beneficios de hacer Test
+
+|                                |                                    |
+|--------------------------------|------------------------------------|
+| Detección temprana de errores  | Mejora de la calidad del software  |
+| Software más confiable         | Software mantenible                |
+| Ahorro de costos a largo plazo | Mejora la documentación del código |
+
+# Tipos de Testing
+
+_Durante el bootcamp nos enfocamos en 3 tipos de test:_
+
+-   **Unit Testing**
+-   **Integration Testing**
+-   **End-to-End Testing**
+
+# Code Time
+
+## ¡Nos vemos en *Test Camp!*
+
+Nos reunimos algunos martes en los siguientes horarios:
+
+-   **México:** 2:00pm - 3:30pm
+-   **Colombia, Ecuador, Perú:** 3:00pm - 4:30pm
+-   **Bolivia:** 4:00pm - 5:30pm
+-   **Chile:** 5:00pm - 6:30pm
+
+------------------------------------------------------------------------
+
+Únete al canal: 
+
+ - _#test-camp_
