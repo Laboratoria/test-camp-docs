@@ -1,0 +1,165 @@
+---
+title: Test unitarios
+format: 
+  revealjs:
+    theme: [moon, custom.scss]
+---
+
+# Test unitarios
+
+![](./img/unit-test-intro.jpeg){fig-alt="Unit Test Img" height=200}
+
+## ¿Que son?
+
+Son procesos donde se prueba pequeñas unidades de código funcional, (es un bloque de código 
+que verifica la veracidad de un pequeño, aislado bloque de código de una aplicación, 
+comúnmente una función) 
+
+# Beneficios
+
+## Ayuda a detectar errores
+
+Si existen errores de entrada, salida o en la lógica las pruebas nos ayudaran a detectarlos de 
+manera temprana.
+ 
+En el desarrollo se suelen realizar muchos cambios, las pruebas esperan los mismos resultados 
+así que además podemos detectar donde surgen los errores.
+
+## Documentación
+
+Las pruebas actúan como una forma de documentación, ya que se sabe exactamente lo que s 
+supone que debe de hacer el código.
+
+# Estrategias
+
+Con estas preguntas podemos seguir estrategias para escribir test unitarios.
+
+## Validación de lógica 
+ 
+- ¿Se realizan los cálculos correctos?
+- ¿Sigue el camino correcto con una entrada correcta? 
+- ¿Están cubiertos distintos casos por las entradas proporcionadas? 
+
+### Ejemplos
+
+- Teniendo en cuenta una funcion que ordena alfabeticamente un arreglo de palabras.
+
+```
+function ordenarPalabras(palabras, orden? = "asendente") {
+  let copia = [...palabras];
+  copia.sort();
+  if (orden === "descendente") {
+    copia.reverse();
+  }
+  return copia;
+}
+```
+
+- ¿El arreglo esta ordenado?
+- ¿Se ordena desendente si recibe desendente?
+
+
+## Validación de limites 
+ 
+  ¿Cómo responde a entradas típicas, casos límite o entradas no válidas? 
+
+### Ejemplos
+
+
+- Teniendo en cuenta una funcion que ordena alfabeticamente un arreglo de palabras.
+
+```
+function ordenarPalabras(palabras, orden? = "asendente") {
+  let copia = [...palabras];
+  copia.sort();
+  if (orden === "descendente") {
+    copia.reverse();
+  }
+  return copia;
+}
+```
+
+- ¿Que pasa si el arreglo esta vacio, nulo o undefinido?
+- ¿Que pasa si el arreglo contiene un tipo de datos distintos?
+ 
+## Manejo de errores 
+ 
+Cuando hay errores en las entradas, ¿cómo responde el sistema? 
+
+### Ejemplos
+
+- Teniendo en cuenta una funcion que ordena alfabeticamente un arreglo de palabras.
+
+```
+function ordenarPalabras(palabras, orden? = "asendente") {
+  let copia = [...palabras];
+  copia.sort();
+  if (orden === "descendente") {
+    copia.reverse();
+  }
+  return copia;
+}
+```
+
+- ¿Que pasa si en lugar de enviar un arreglo se envia otro tipo de dato?
+
+
+## Características de una buena prueba unitaria
+
+- Rápida: Algunos proyectos pueden tener muchas pruebas unitarias, es importante que 
+tarden poco en ejecutarse. 
+- Aisladas: Es clave que sean independientes, que no necesiten ningún factor externo para 
+funcionar.  
+- Repetible: Que siempre devuelva el mismo resultado en cada ejecución 
+- Auto-validada: debe poder detectar por sí misma si pasa o no sin interacción humana. 
+- Oportuna: Escribir la prueba no debería de tomar mucho más Iempo que el código que 
+se quiere probar. 
+
+# Cobertura  
+
+Un alto porcentaje de cobertura puede significar una mayor calidad del código. Sin embargo, no puede determinar la calidad del código. (Está bien si no alcanzas el 100% de cobertura no te presiones 😊) 
+
+# Un poco de terminología 
+
+Un componente importante al escribir pruebas unitarias es eliminar todas las dependencias para hacer eso nos toparemos con el termino **mock function**: 
+
+Te permite tener un comportamiento predeterminado que sustituye al comportamiento real, capturando las llamadas a esas funciones y sustituyendo su implementación.  
+
+Es muy útil al momento de hacer uso de servicios de terceros (como Firebase) 
+
+# Nombrando las pruebas 
+
+El nombre de tu prueba debería considerar estas partes:
+
+    - El nombre del método que será probado 
+    - El escenario
+    - Y lo que se esperar al ser ejecutado bajo ese escenario 
+
+## Ejemplo:
+
+- Teniendo en cuenta una funcion que ordena alfabeticamente un arreglo de palabras.
+
+```
+function ordenarPalabras(palabras, orden? = "asendente") {
+  let copia = [...palabras];
+  copia.sort();
+  if (orden === "descendente") {
+    copia.reverse();
+  }
+  return copia;
+}
+```
+
+Ordenar por nombre arreglo vacío regresa arreglo vacío.
+
+
+### ¿Por qué? 
+
+Nombrar de manera estándar es importante porque expresa la intención explicita de una prueba 
+
+# Bibliografía:
+
+- [What is Unit Testing? - Unit Testing Explained - AWS (amazon.com)](https://aws.amazon.com/what-is/unit-testing/)
+- [Best practices for writing unit tests - .NET | Microsoft Learn )](https://learn.microsoft.com/en-us/dotnet/core/testing/unit-testing-best-practices)
+- [Mock Functions · Jest (jestjs.io)](https://jestjs.io/docs/mock-functions)
+- [Mocking in Unit Tests - Code With Engineering Playbook (microsoft.github.io)](https://microsoft.github.io/code-with-engineering-playbook/automated-testing/unit-testing/mocking/#best-practices)
