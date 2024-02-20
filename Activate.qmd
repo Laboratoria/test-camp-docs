@@ -2,7 +2,8 @@
 title: Testing en Laboratoria
 format: 
   revealjs:
-    theme: [moon, custom.scss]
+    theme: [simple, custom.scss]
+    transition: slide
 ---
 
 # Testing
@@ -89,8 +90,12 @@ Nos reunimos algunos martes en los siguientes horarios:
 -   **Bolivia:** 4:00pm - 5:30pm
 -   **Chile:** 5:00pm - 6:30pm
 
-------------------------------------------------------------------------
-
-Únete al canal: 
+## Únete al canal: 
 
  - _#test-camp_
+
+# ¡Gracias! <br> Thank you! <br> Obrigado!
+
+::: { .r-fit-text .white } 
+\>\>
+:::

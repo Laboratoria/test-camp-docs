@@ -1,7 +1,51 @@
 /*-- scss:defaults --*/
 
-$body-bg: #191919;
-$body-color: #fff;
+:root {
+    --amarillo: #FFE521;
+    --rosa: #FF009E;
+    --verde: #56F89A;
+}
+
+$body-bg: #fff; 
+$body-color: #000;
 $link-color: #42affa;
 
 /*-- scss:rules --*/
+
+
+@import url('https://fonts.googleapis.com/css?family=Bitter:400,700,400italic');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800');
+
+.reveal-viewport {
+    background-color: var(--amarillo);
+}
+
+.reveal h1 {
+    font-family: bitter;
+    font-weight: 700;
+}
+
+.reveal {
+    font-family: 'Open Sans';
+}
+
+.reveal blockquote {
+    background-color: var(--rosa);
+    color: white;
+}
+
+.reveal::after {
+    content: "<L>";
+    position: fixed;
+    bottom: 10%;
+    right: 10%;
+    font-weight: bolder;
+    font-style: normal;
+    width: 100%;
+    text-align: right;
+    z-index: 9999;
+}
+
+.white {
+    color: white;
+}
