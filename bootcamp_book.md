@@ -5,7 +5,7 @@ Test Camp es un encuentro quincenal diseñado para brindar apoyo y guía a las e
 
 ## Sesión de activación
 
-El espacio de activación tiene como objetivo transmitir la importancia de hacer testing en sus proyectos y comunicarles cómo es la dinámica que se lleva a cabo en test camp así como la invitación al espacio. Podemos apoyarnos de las siguientes slides: [Link a las slides](https://docs.google.com/presentation/d/1Mvd8exSN7EmAg7Oi7xSL7xAEQJh98oJtBhnlnpQTAAU/edit?usp=sharing)
+El espacio de activación tiene como objetivo transmitir la importancia de hacer testing en sus proyectos y comunicarles cómo es la dinámica que se lleva a cabo en test camp así como la invitación al espacio. Podemos apoyarnos de las siguientes slides: [Link a las slides](https://laboratoria.github.io/test-camp-docs/#/title-slide)
 
 ### Consideraciones en la sesión de activación:
 
