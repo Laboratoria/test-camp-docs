@@ -1,0 +1,212 @@
+[
+  {
+    "objectID": "baseline_docs.html",
+    "href": "baseline_docs.html",
+    "title": "",
+    "section": "",
+    "text": "Test Camp Baseline Docs\nSesión de Activación: 30 minutos - 60 minutos (Presentación con Slides y/o Demo)\nLa importancia de las pruebas en JavaScript: - Garantizar la calidad del código desde el principio. - Prevenir errores antes de que el código vaya a producción. - Facilitar la integración y despliegue continuo de forma segura.\nQué aportan las pruebas a nuestro código: - Verificación de que las funciones realizan lo que se espera de ellas (Validación de que el código cumple con los requisitos funcionales). - Servir como documentación detallada de los casos de uso y comportamientos esperados. - Facilidad para realizar cambios y refactorizaciones con la seguridad de que no se introducen errores.\nPosibilidades que ofrecen las pruebas en JavaScript: - Fomentar el Desarrollo Guiado por Pruebas (TDD) para un proceso de desarrollo más estructurado. - Utilizar Jest como herramienta principal para pruebas en Vanilla JavaScript. - Integrar pruebas automatizadas en flujos de trabajo de CI/CD. - Automatizar las pruebas unitarias y de integración para mantener la integridad del código.\nDEMO\nComandos y conceptos básicos (Mostrar flujo de trabajo de pruebas con Jest):\nNivel 0 - Instalación y configuración de Jest. - Uso del comando npm run test para ejecutar pruebas. - Construcción de pruebas unitarias básicas para validar funciones individuales.\nNivel 1 - Estructuración de pruebas utilizando describe y it. - Implementación de aserciones con expect. - Testeo de eventos DOM y funciones asíncronas.\nNivel 2 - Análisis de cobertura de código para garantizar una cobertura de pruebas suficiente. - Mocking y spies para simular comportamientos y dependencias. - Pruebas end-to-end (introducción y herramientas recomendadas).\nPropuesta para segunda sesión: - Profundizar en técnicas de testing más avanzadas con Jest y otros frameworks. - Realizar revisiones de código enfocándose en la calidad de las pruebas implementadas y la cobertura de código.\nCONCEPTOS CLAVE\nIdeas fundamentales para internalizar: - “Tus pruebas son un reflejo de tus historias de usuario (specs).” - “Realiza commits frecuentes y prueba cada cambio significativo.” - “Empieza cada sesión de codificación con un estado limpio y prueba después de resolver cada conflicto.” - “Nunca comprometas código a la rama principal sin pruebas adecuadas.” - “Minimiza las divergencias para reducir los conflictos y facilitar la integración de cambios.”\nAlgunas referencias y recursos en ES y PT (pendiente completar): - https://4geeks.com/es/lesson/how-to-create-unit-testing-with-Javascript-and-Jest-es - https://kinsta.com/es/blog/jest/ - https://www.testim.io/blog/jest-testing-a-helpful-introductory-tutorial/ - https://www.devmedia.com.br/testes-unitarios-em-javascript-introducao/31510 - https://awari.com.br/guia-completo-de-testes-unitarios-para-desenvolvedores-frontend/?utm_source=blog&utm_campaign=projeto+blog&utm_medium=Guia%20Completo%20De%20Testes%20Unit%C3%A1rios%20Para%20Desenvolvedores%20Frontend\nEstructura de contenidos y temario: - Ajustar los temas para abarcar desde pruebas básicas en JavaScript puro hasta el uso de Jest y otras herramientas en proyectos más complejos. - Enfatizar la importancia de probar no solo las funciones, sino también las interacciones del usuario y las condiciones de fallo. - Incorporar estudios de caso y ejemplos que demuestran cómo las pruebas ayudan a prevenir problemas comunes y cómo contribuyen al proceso de desarrollo.\n[BACKGROUND DE TESTS POR PROYECTO]\nPROYECTO 01 - TEXT ANALYZER - Identificar pruebas ya implementadas. - Analizar qué testea y su importancia. - Familiarizarse con los conceptos básicos (estructuras y comandos). Propuesta: Tener un temario o guía a desglose por cada proyecto (tips de qué testear y/o guías específicas para la estructura lógica / proyecto / framework en el que estén - TO DO: Propuesta en fork - BC Github."
+  },
+  {
+    "objectID": "bootcamp_book.html",
+    "href": "bootcamp_book.html",
+    "title": "Test Camp (Core)",
+    "section": "",
+    "text": "Test Camp es un encuentro quincenal diseñado para brindar apoyo y guía a las estudiantes que se encuentran en los primeros 3 proyectos de bootcamp para que ellas logren alcanzar los objetivos de aprendizaje relacionados a testing. En este espacio, nos reunimos para abordar dudas, ver estrategias de creación de test y compartir información relacionada con las herramientas de testing. La sesión es liderada por coaches quienes compartirán feedback sobre buenas prácticas así como recomendaciones para que las estudiantes puedan abordar los test en la etapa core de bootcamp. Como resultado se espera cultivar las habilidades en las estudiantes y maximizar su aprovechamiento de estas técnicas fundamentales en el desarrollo de software.\n\n\nEl espacio de activación tiene como objetivo transmitir la importancia de hacer testing en sus proyectos y comunicarles cómo es la dinámica que se lleva a cabo en test camp así como la invitación al espacio. Podemos apoyarnos de las siguientes slides: Link a las slides\n\n\n\nDuración: 1h\nEl ejercicio comienza a partir del ejemplo de la suma\nAcomodar, Actuar, Afirmar\nSuite + Test\nAserción + Matcher\n\n\n\n\n\nLa importancia de los test en bootcamp: - Permite tener un código mantenible - Garantizar la calidad del código desde el principio. - Prevenir errores antes de que el código vaya a producción. - Facilitar la integración y despliegue continuo de forma segura. - Ayuda a no tener código spaghetti\nQué aportan las pruebas en el código de las estudiantes: - Verificación de que las funciones realizan lo que se espera de ellas (Validación de que el código cumple con los requisitos funcionales). - Servir como documentación detallada de los casos de uso y comportamientos esperados. - Facilidad para realizar cambios y refactorizaciones con la seguridad de que no se introducen errores.\n\n\nExisten distintos tipos de testing previamente configurados en los proyectos y test como estudiantes vale la pena invertir tiempo en crearlos para asegurar la calidad del código.\n\n\nUn test unitario es una pequeña pieza de código que verifica si una parte del código, (habitualmente una función), funciona correctamente, los tests unitarios se utilizan para asegurarse de que cada parte individual de un programa hace lo que se supone que debe hacer.\n\n\n\nUn test de integración es una prueba que verifica si todas las partes diferentes de un programa funcionan bien juntas. Imagina que estás construyendo un rompecabezas y quieres asegurarte de que todas las piezas encajen correctamente. A diferencia del test unitario el test de integración no mira cada pieza individualmente, todo lo contrario, un test de integración se centra en cómo se comportan todas esas piezas cuando trabajan juntas.\n\n\n\nUn test end-to-end (E2E) es una prueba que prueba la experiencia completa de la usuaria, desde el inicio hasta el final, como si fuera una usuaria real interactuando con una aplicación. Imagina que eres una clienta que usa una aplicación: haces clic en botones, llenas formularios y navegas por diferentes páginas el test E2E verificar si la aplicación funciona como debería desde el punto de vista de la usuaria. Similar a tener a alguien que prueba cada parte de la aplicación, desde el principio hasta el final, para asegurarse de que todo funcione correctamente.\n\n\n\n\n\n\nHablar sobre la diferencia entre el test vs correr el pretest la relevancia que tiene eslint en el ciclo de vida de su proyecto.\nHablar sobre el patrón AAA en el test “Arrange, Act, Assert”:\n\nArrange (acomodar el Ambiente): En esta etapa, se establecen las condiciones iniciales y se configuran los objetos necesarios para la prueba. Esto puede incluir la creación de objetos, la configuración de variables y la preparación del entorno de prueba.\nAct (Actuar): En esta etapa, se lleva a cabo la acción o el comportamiento que se está probando. Es la ejecución del código que se está evaluando.\nAssert (Afirmar): Aquí se verifica el resultado esperado de la acción realizada en la etapa anterior. Se comprueba si el resultado coincide con lo que se espera según la lógica de la prueba. Si la afirmación es verdadera, la prueba pasa; de lo contrario, falla.\n\nHablar sobre convenciones utilizando jest\n\nEstructuración de pruebas utilizando describe e it.\nImplementación de aserciones con expect.\nString con afirmaciones completas de lo que debería hacer\n\nGrabar la sesión\nAlgunos Mantras sobre Testing en Laboratoria\n\nAAA: Acomodar el Ambiente, ejecutar Acción. Finalmente Afirmar lo esperado.\nEvitar probar detalles de implementación (probar lo que hace, no tanto cómo lo hace)\nEs mejor pedir perdón que permiso (ej.: ejecutar la función, en lugar de verificar que sea una función).\nLos tests deberían ser un reflejo de las historias de usuario (de la especificación, spec)."
+  },
+  {
+    "objectID": "bootcamp_book.html#sesión-de-activación",
+    "href": "bootcamp_book.html#sesión-de-activación",
+    "title": "Test Camp (Core)",
+    "section": "",
+    "text": "El espacio de activación tiene como objetivo transmitir la importancia de hacer testing en sus proyectos y comunicarles cómo es la dinámica que se lleva a cabo en test camp así como la invitación al espacio. Podemos apoyarnos de las siguientes slides: Link a las slides\n\n\n\nDuración: 1h\nEl ejercicio comienza a partir del ejemplo de la suma\nAcomodar, Actuar, Afirmar\nSuite + Test\nAserción + Matcher"
+  },
+  {
+    "objectID": "bootcamp_book.html#alineación-como-coaches",
+    "href": "bootcamp_book.html#alineación-como-coaches",
+    "title": "Test Camp (Core)",
+    "section": "",
+    "text": "La importancia de los test en bootcamp: - Permite tener un código mantenible - Garantizar la calidad del código desde el principio. - Prevenir errores antes de que el código vaya a producción. - Facilitar la integración y despliegue continuo de forma segura. - Ayuda a no tener código spaghetti\nQué aportan las pruebas en el código de las estudiantes: - Verificación de que las funciones realizan lo que se espera de ellas (Validación de que el código cumple con los requisitos funcionales). - Servir como documentación detallada de los casos de uso y comportamientos esperados. - Facilidad para realizar cambios y refactorizaciones con la seguridad de que no se introducen errores.\n\n\nExisten distintos tipos de testing previamente configurados en los proyectos y test como estudiantes vale la pena invertir tiempo en crearlos para asegurar la calidad del código.\n\n\nUn test unitario es una pequeña pieza de código que verifica si una parte del código, (habitualmente una función), funciona correctamente, los tests unitarios se utilizan para asegurarse de que cada parte individual de un programa hace lo que se supone que debe hacer.\n\n\n\nUn test de integración es una prueba que verifica si todas las partes diferentes de un programa funcionan bien juntas. Imagina que estás construyendo un rompecabezas y quieres asegurarte de que todas las piezas encajen correctamente. A diferencia del test unitario el test de integración no mira cada pieza individualmente, todo lo contrario, un test de integración se centra en cómo se comportan todas esas piezas cuando trabajan juntas.\n\n\n\nUn test end-to-end (E2E) es una prueba que prueba la experiencia completa de la usuaria, desde el inicio hasta el final, como si fuera una usuaria real interactuando con una aplicación. Imagina que eres una clienta que usa una aplicación: haces clic en botones, llenas formularios y navegas por diferentes páginas el test E2E verificar si la aplicación funciona como debería desde el punto de vista de la usuaria. Similar a tener a alguien que prueba cada parte de la aplicación, desde el principio hasta el final, para asegurarse de que todo funcione correctamente."
+  },
+  {
+    "objectID": "bootcamp_book.html#buenas-prácticas",
+    "href": "bootcamp_book.html#buenas-prácticas",
+    "title": "Test Camp (Core)",
+    "section": "",
+    "text": "Hablar sobre la diferencia entre el test vs correr el pretest la relevancia que tiene eslint en el ciclo de vida de su proyecto.\nHablar sobre el patrón AAA en el test “Arrange, Act, Assert”:\n\nArrange (acomodar el Ambiente): En esta etapa, se establecen las condiciones iniciales y se configuran los objetos necesarios para la prueba. Esto puede incluir la creación de objetos, la configuración de variables y la preparación del entorno de prueba.\nAct (Actuar): En esta etapa, se lleva a cabo la acción o el comportamiento que se está probando. Es la ejecución del código que se está evaluando.\nAssert (Afirmar): Aquí se verifica el resultado esperado de la acción realizada en la etapa anterior. Se comprueba si el resultado coincide con lo que se espera según la lógica de la prueba. Si la afirmación es verdadera, la prueba pasa; de lo contrario, falla.\n\nHablar sobre convenciones utilizando jest\n\nEstructuración de pruebas utilizando describe e it.\nImplementación de aserciones con expect.\nString con afirmaciones completas de lo que debería hacer\n\nGrabar la sesión\nAlgunos Mantras sobre Testing en Laboratoria\n\nAAA: Acomodar el Ambiente, ejecutar Acción. Finalmente Afirmar lo esperado.\nEvitar probar detalles de implementación (probar lo que hace, no tanto cómo lo hace)\nEs mejor pedir perdón que permiso (ej.: ejecutar la función, en lugar de verificar que sea una función).\nLos tests deberían ser un reflejo de las historias de usuario (de la especificación, spec)."
+  },
+  {
+    "objectID": "Activate.html#por-qué-la-mayoría-de-lxs-desarrolladorxs-temen-realizar-cambios-continuos-en-su-código-tienen-miedo-de-romperlo-por-qué-tienen-miedo-de-romperlo-porque-no-tienen-test.",
+    "href": "Activate.html#por-qué-la-mayoría-de-lxs-desarrolladorxs-temen-realizar-cambios-continuos-en-su-código-tienen-miedo-de-romperlo-por-qué-tienen-miedo-de-romperlo-porque-no-tienen-test.",
+    "title": "Testing en Laboratoria",
+    "section": "“¿Por qué la mayoría de lxs desarrolladorxs temen realizar cambios continuos en su código? ¡Tienen miedo de romperlo! ¿Por qué tienen miedo de romperlo? Porque no tienen test.”",
+    "text": "“¿Por qué la mayoría de lxs desarrolladorxs temen realizar cambios continuos en su código? ¡Tienen miedo de romperlo! ¿Por qué tienen miedo de romperlo? Porque no tienen test.”\n–Robert C. Martin, Clean Coder, The: A Code of Conduct for Professional Programmers"
+  },
+  {
+    "objectID": "Activate.html#función-suma",
+    "href": "Activate.html#función-suma",
+    "title": "Testing en Laboratoria",
+    "section": "Función Suma",
+    "text": "Función Suma"
+  },
+  {
+    "objectID": "Activate.html#ariane-5-1996",
+    "href": "Activate.html#ariane-5-1996",
+    "title": "Testing en Laboratoria",
+    "section": "Ariane 5 (1996)",
+    "text": "Ariane 5 (1996)\nEl cohete Ariane 5 explotó 40 segundos después de su lanzamiento debido a un error en el software. El error fue causado por la conversión de un número de 64 bits a un número de 16 bits, lo que resultó en un desbordamiento de enteros.\nCon tests, este error podría haber sido detectado antes del lanzamiento."
+  },
+  {
+    "objectID": "Activate.html#therac-25-1985-1987",
+    "href": "Activate.html#therac-25-1985-1987",
+    "title": "Testing en Laboratoria",
+    "section": "Therac-25 (1985-1987)",
+    "text": "Therac-25 (1985-1987)\nEl Therac-25 fue un dispositivo de radioterapia utilizado para el tratamiento de cáncer. Debido a errores en el software y la falta de testing adecuado, se produjeron varios incidentes en los que los pacientes recibieron dosis de radiación letales.\nCon tests, estos errores podrían haber sido detectados antes de que el dispositivo fuera utilizado en pacientes."
+  },
+  {
+    "objectID": "Activate.html#knight-capital-group-2012",
+    "href": "Activate.html#knight-capital-group-2012",
+    "title": "Testing en Laboratoria",
+    "section": "Knight Capital Group (2012)",
+    "text": "Knight Capital Group (2012)\nLa empresa de trading de alta frecuencia Knight Capital Group perdió $440 millones en 45 minutos debido a un error en el software. El error fue causado por una actualización de software que no fue probada adecuadamente, lo que llevó a la ejecución de operaciones no deseadas.\nCon los tests adecuados, este error podría haber sido detectado antes de que el software fuera puesto en producción."
+  },
+  {
+    "objectID": "Activate.html#google",
+    "href": "Activate.html#google",
+    "title": "Testing en Laboratoria",
+    "section": "Google",
+    "text": "Google\nGoogle es conocido por realizar extensas pruebas en sus productos y servicios, como Google Search, Gmail y Android. Utilizan un enfoque llamado “Testing on the Toilet” (Pruebas en el Baño), donde promueven la cultura de pruebas entre sus desarrolladores. 🚽"
+  },
+  {
+    "objectID": "Activate.html#facebook",
+    "href": "Activate.html#facebook",
+    "title": "Testing en Laboratoria",
+    "section": "Facebook",
+    "text": "Facebook\nFacebook utiliza un enfoque llamado “Test-Driven Development” (Desarrollo Dirigido por Pruebas) para desarrollar sus productos. Esto significa que escriben pruebas antes de escribir el código, lo que les permite asegurarse de que el código cumple con los requisitos antes de ser implementado."
+  },
+  {
+    "objectID": "Activate.html#amazon",
+    "href": "Activate.html#amazon",
+    "title": "Testing en Laboratoria",
+    "section": "Amazon",
+    "text": "Amazon\nAmazon utiliza un enfoque llamado “Chaos Engineering” (Ingeniería del Caos) para probar la resiliencia de sus sistemas. Esto implica la introducción de fallos en sus sistemas para ver cómo se comportan en situaciones inesperadas.\nSiguen enfoques de desarrollo orientados a pruebas para garantizar la calidad del software."
+  },
+  {
+    "objectID": "Activate.html#beneficios-de-hacer-test",
+    "href": "Activate.html#beneficios-de-hacer-test",
+    "title": "Testing en Laboratoria",
+    "section": "Beneficios de hacer Test",
+    "text": "Beneficios de hacer Test\n\n\n\nDetección temprana de errores\nMejora de la calidad del software\n\n\nSoftware más confiable\nSoftware mantenible\n\n\nAhorro de costos a largo plazo\nMejora la documentación del código"
+  },
+  {
+    "objectID": "Activate.html#nos-vemos-en-test-camp",
+    "href": "Activate.html#nos-vemos-en-test-camp",
+    "title": "Testing en Laboratoria",
+    "section": "¡Nos vemos en Test Camp!",
+    "text": "¡Nos vemos en Test Camp!\nNos reunimos algunos martes en los siguientes horarios:\n\nMéxico: 2:00pm - 3:30pm\nColombia, Ecuador, Perú: 3:00pm - 4:30pm\nBolivia: 4:00pm - 5:30pm\nChile: 5:00pm - 6:30pm"
+  },
+  {
+    "objectID": "Activate.html#únete-al-canal",
+    "href": "Activate.html#únete-al-canal",
+    "title": "Testing en Laboratoria",
+    "section": "Únete al canal:",
+    "text": "Únete al canal:\n\n#test-camp"
+  },
+  {
+    "objectID": "Activate.pt.html#por-que-a-maioria-dos-desenvolvedores-tem-medo-de-fazer-mudanças-contínuas-em-seu-código-eles-têm-medo-de-quebrá-lo-por-que-eles-têm-medo-de-quebrá-lo-porque-eles-não-têm-testes.",
+    "href": "Activate.pt.html#por-que-a-maioria-dos-desenvolvedores-tem-medo-de-fazer-mudanças-contínuas-em-seu-código-eles-têm-medo-de-quebrá-lo-por-que-eles-têm-medo-de-quebrá-lo-porque-eles-não-têm-testes.",
+    "title": "Testes em Laboratoria",
+    "section": "“Por que a maioria dos desenvolvedores tem medo de fazer mudanças contínuas em seu código? Eles têm medo de quebrá-lo! Por que eles têm medo de quebrá-lo? Porque eles não têm testes.”",
+    "text": "“Por que a maioria dos desenvolvedores tem medo de fazer mudanças contínuas em seu código? Eles têm medo de quebrá-lo! Por que eles têm medo de quebrá-lo? Porque eles não têm testes.”\n–Robert C. Martin, Clean Coder, The: A Code of Conduct for Professional Programmers"
+  },
+  {
+    "objectID": "Activate.pt.html#função-soma",
+    "href": "Activate.pt.html#função-soma",
+    "title": "Testes em Laboratoria",
+    "section": "Função Soma",
+    "text": "Função Soma"
+  },
+  {
+    "objectID": "Activate.pt.html#ariane-5-1996",
+    "href": "Activate.pt.html#ariane-5-1996",
+    "title": "Testes em Laboratoria",
+    "section": "Ariane 5 (1996)",
+    "text": "Ariane 5 (1996)\nO foguete Ariane 5 explodiu 40 segundos após seu lançamento devido a um erro de software. O erro foi causado pela conversão de um número de 64 bits para um número de 16 bits, resultando em um estouro de inteiro.\nCom testes, esse erro poderia ter sido detectado antes do lançamento."
+  },
+  {
+    "objectID": "Activate.pt.html#therac-25-1985-1987",
+    "href": "Activate.pt.html#therac-25-1985-1987",
+    "title": "Testes em Laboratoria",
+    "section": "Therac-25 (1985-1987)",
+    "text": "Therac-25 (1985-1987)\nO Therac-25 foi um dispositivo de radioterapia usado para tratar o câncer. Devido a erros de software e falta de testes adequados, ocorreram vários incidentes em que os pacientes receberam doses letais de radiação.\nCom testes, esses erros poderiam ter sido detectados antes do dispositivo ser usado em pacientes."
+  },
+  {
+    "objectID": "Activate.pt.html#knight-capital-group-2012",
+    "href": "Activate.pt.html#knight-capital-group-2012",
+    "title": "Testes em Laboratoria",
+    "section": "Knight Capital Group (2012)",
+    "text": "Knight Capital Group (2012)\nA empresa de negociação de alta frequência Knight Capital Group perdeu US$ 440 milhões em 45 minutos devido a um erro de software. O erro foi causado por uma atualização de software que não foi devidamente testada, levando à execução de operações indesejadas.\nCom os testes adequados, esse erro poderia ter sido detectado antes do software ser colocado em produção."
+  },
+  {
+    "objectID": "Activate.pt.html#google",
+    "href": "Activate.pt.html#google",
+    "title": "Testes em Laboratoria",
+    "section": "Google",
+    "text": "Google\nO Google é conhecido por realizar extensos testes em seus produtos e serviços, como o Google Search, Gmail e Android. Eles usam uma abordagem chamada “Testing on the Toilet” (Testes no Banheiro), onde promovem a cultura de testes entre seus desenvolvedores. 🚽"
+  },
+  {
+    "objectID": "Activate.pt.html#facebook",
+    "href": "Activate.pt.html#facebook",
+    "title": "Testes em Laboratoria",
+    "section": "Facebook",
+    "text": "Facebook\nO Facebook usa uma abordagem chamada “Test-Driven Development” (Desenvolvimento Orientado por Testes) para desenvolver seus produtos. Isso significa que eles escrevem testes antes de escrever o código, o que lhes permite garantir que o código atenda aos requisitos antes de ser implementado."
+  },
+  {
+    "objectID": "Activate.pt.html#amazon",
+    "href": "Activate.pt.html#amazon",
+    "title": "Testes em Laboratoria",
+    "section": "Amazon",
+    "text": "Amazon\nA Amazon usa uma abordagem chamada “Chaos Engineering” (Engenharia do Caos) para testar a resiliência de seus sistemas. Isso envolve a introdução de falhas em seus sistemas para ver como eles se comportam em situações inesperadas.\nEles seguem abordagens de desenvolvimento orientadas a testes para garantir a qualidade do software."
+  },
+  {
+    "objectID": "Activate.pt.html#benefícios-de-fazer-testes",
+    "href": "Activate.pt.html#benefícios-de-fazer-testes",
+    "title": "Testes em Laboratoria",
+    "section": "Benefícios de fazer Testes",
+    "text": "Benefícios de fazer Testes\n\n\n\n\n\n\n\nDetecção precoce de erros\nMelhoria da qualidade do software\n\n\nSoftware mais confiável\nSoftware sustentável\n\n\nEconomia de custos a longo prazo\nMelhora a documentação do código"
+  },
+  {
+    "objectID": "Activate.pt.html#te-vejo-no-test-camp",
+    "href": "Activate.pt.html#te-vejo-no-test-camp",
+    "title": "Testes em Laboratoria",
+    "section": "Te vejo no Test Camp!",
+    "text": "Te vejo no Test Camp!\nJunte-se ao canal:\n\n#test-camp"
+  },
+  {
+    "objectID": "bootcamp_book.pt.html",
+    "href": "bootcamp_book.pt.html",
+    "title": "Test Camp (Core)",
+    "section": "",
+    "text": "Test Camp é um encontro quinzenal projetado para fornecer suporte e orientação para as estudantes que estão nos primeiros 3 projetos de bootcamp para que elas possam atingir os objetivos de aprendizagem relacionados ao teste. Neste espaço, nos reunimos para discutir dúvidas, ver estratégias de criação de teste e compartilhar informações relacionadas com as ferramentas de teste. A sessão é liderada por treinadores que compartilharão feedback sobre boas práticas, bem como recomendações para que as estudantes possam abordar os testes na fase core do bootcamp. Como resultado, espera-se cultivar as habilidades nas estudantes e maximizar o aproveitamento dessas técnicas fundamentais no desenvolvimento de software.\n\n\nO espaço de ativação tem como objetivo transmitir a importância de fazer testes em seus projetos e comunicar como é a dinâmica que ocorre no test camp, bem como o convite para o espaço. Podemos nos apoiar nos seguintes slides: Link para os slides\n\n\n\nDuração: 1h\nO exercício começa a partir do exemplo da soma\nAcomodar, Atuar, Afirmar\nSuíte + Teste\nAserção + Matcher\n\n\n\n\n\nA importância dos testes no bootcamp: - Permite ter um código mantível - Garantir a qualidade do código desde o início. - Prevenir erros antes que o código vá para produção. - Facilitar a integração e implantação contínua de forma segura. - Ajuda a não ter código espaguete\nO que os testes trazem para o código das estudantes: - Verificação de que as funções realizam o que se espera delas (Validação de que o código cumpre os requisitos funcionais). - Servir como documentação detalhada dos casos de uso e comportamentos esperados. - Facilidade para fazer alterações e refatorações com a segurança de que não estão sendo introduzidos erros.\n\n\nExistem diferentes tipos de testes previamente configurados nos projetos e testes como estudantes vale a pena investir tempo para garantir a qualidade do código.\n\n\nUm teste unitário é uma pequena peça de código que verifica se uma parte do código, (geralmente uma função), funciona corretamente, os testes unitários são usados para garantir que cada parte individual de um programa faça o que se supõe que deve fazer.\n\n\n\nUm teste de integração é um teste que verifica se todas as diferentes partes de um programa funcionam bem juntas. Imagine que você está construindo um quebra-cabeça e quer ter certeza de que todas as peças se encaixam corretamente. Ao contrário do teste unitário, o teste de integração não olha para cada peça individualmente, pelo contrário, um teste de integração se concentra em como todas essas peças se comportam quando trabalham juntas.\n\n\n\nUm teste de ponta a ponta (E2E) é um teste que testa a experiência completa do usuário, do início ao fim, como se fosse um usuário real interagindo com um aplicativo. Imagine que você é um cliente usando um aplicativo: você clica em botões, preenche formulários e navega por diferentes páginas, o teste E2E verifica se o aplicativo funciona como deveria do ponto de vista do usuário. Semelhante a ter alguém que testa cada parte do aplicativo, do início ao fim, para garantir que tudo funcione corretamente.\n\n\n\n\n\n\nFalar sobre a diferença entre o teste vs executar o pré-teste a relevância que tem eslint no ciclo de vida do seu projeto.\nFalar sobre o padrão AAA no teste “Arrange, Act, Assert”:\n\nArrange (organizar o ambiente): Nesta fase, são estabelecidas as condições iniciais e são configurados os objetos necessários para o teste. Isso pode incluir a criação de objetos, a configuração de variáveis e a preparação do ambiente de teste.\nAct (Atuar): Nesta fase, é realizada a ação ou o comportamento que está sendo testado. É a execução do código que está sendo avaliado.\nAssert (Afirmar): Aqui é verificado o resultado esperado da ação realizada na etapa anterior. Verifica-se se o resultado coincide com o que se espera de acordo com a lógica do teste. Se a afirmação for verdadeira, o teste passa; caso contrário, falha.\n\nFalar sobre convenções utilizando jest\n\nEstruturação de testes utilizando describe e it.\nImplementação de asserções com expect.\nString com afirmações completas do que deveria fazer\n\nGravar a sessão\nAlguns Mantras sobre Testes no Laboratória\n\nAAA: Organizar o Ambiente, executar Ação. Finalmente Afirmar o esperado.\nEvitar testar detalhes de implementação (testar o que faz, não tanto como faz)\nÉ melhor pedir perdão do que permissão (ex.: executar a função, em vez de verificar se é uma função).\nOs testes devem refletir as histórias dos usuários (da especificação, spec)."
+  },
+  {
+    "objectID": "bootcamp_book.pt.html#sessão-de-ativação",
+    "href": "bootcamp_book.pt.html#sessão-de-ativação",
+    "title": "Test Camp (Core)",
+    "section": "",
+    "text": "O espaço de ativação tem como objetivo transmitir a importância de fazer testes em seus projetos e comunicar como é a dinâmica que ocorre no test camp, bem como o convite para o espaço. Podemos nos apoiar nos seguintes slides: Link para os slides\n\n\n\nDuração: 1h\nO exercício começa a partir do exemplo da soma\nAcomodar, Atuar, Afirmar\nSuíte + Teste\nAserção + Matcher"
+  },
+  {
+    "objectID": "bootcamp_book.pt.html#alinhamento-como-treinadores",
+    "href": "bootcamp_book.pt.html#alinhamento-como-treinadores",
+    "title": "Test Camp (Core)",
+    "section": "",
+    "text": "A importância dos testes no bootcamp: - Permite ter um código mantível - Garantir a qualidade do código desde o início. - Prevenir erros antes que o código vá para produção. - Facilitar a integração e implantação contínua de forma segura. - Ajuda a não ter código espaguete\nO que os testes trazem para o código das estudantes: - Verificação de que as funções realizam o que se espera delas (Validação de que o código cumpre os requisitos funcionais). - Servir como documentação detalhada dos casos de uso e comportamentos esperados. - Facilidade para fazer alterações e refatorações com a segurança de que não estão sendo introduzidos erros.\n\n\nExistem diferentes tipos de testes previamente configurados nos projetos e testes como estudantes vale a pena investir tempo para garantir a qualidade do código.\n\n\nUm teste unitário é uma pequena peça de código que verifica se uma parte do código, (geralmente uma função), funciona corretamente, os testes unitários são usados para garantir que cada parte individual de um programa faça o que se supõe que deve fazer.\n\n\n\nUm teste de integração é um teste que verifica se todas as diferentes partes de um programa funcionam bem juntas. Imagine que você está construindo um quebra-cabeça e quer ter certeza de que todas as peças se encaixam corretamente. Ao contrário do teste unitário, o teste de integração não olha para cada peça individualmente, pelo contrário, um teste de integração se concentra em como todas essas peças se comportam quando trabalham juntas.\n\n\n\nUm teste de ponta a ponta (E2E) é um teste que testa a experiência completa do usuário, do início ao fim, como se fosse um usuário real interagindo com um aplicativo. Imagine que você é um cliente usando um aplicativo: você clica em botões, preenche formulários e navega por diferentes páginas, o teste E2E verifica se o aplicativo funciona como deveria do ponto de vista do usuário. Semelhante a ter alguém que testa cada parte do aplicativo, do início ao fim, para garantir que tudo funcione corretamente."
+  },
+  {
+    "objectID": "bootcamp_book.pt.html#boas-práticas",
+    "href": "bootcamp_book.pt.html#boas-práticas",
+    "title": "Test Camp (Core)",
+    "section": "",
+    "text": "Falar sobre a diferença entre o teste vs executar o pré-teste a relevância que tem eslint no ciclo de vida do seu projeto.\nFalar sobre o padrão AAA no teste “Arrange, Act, Assert”:\n\nArrange (organizar o ambiente): Nesta fase, são estabelecidas as condições iniciais e são configurados os objetos necessários para o teste. Isso pode incluir a criação de objetos, a configuração de variáveis e a preparação do ambiente de teste.\nAct (Atuar): Nesta fase, é realizada a ação ou o comportamento que está sendo testado. É a execução do código que está sendo avaliado.\nAssert (Afirmar): Aqui é verificado o resultado esperado da ação realizada na etapa anterior. Verifica-se se o resultado coincide com o que se espera de acordo com a lógica do teste. Se a afirmação for verdadeira, o teste passa; caso contrário, falha.\n\nFalar sobre convenções utilizando jest\n\nEstruturação de testes utilizando describe e it.\nImplementação de asserções com expect.\nString com afirmações completas do que deveria fazer\n\nGravar a sessão\nAlguns Mantras sobre Testes no Laboratória\n\nAAA: Organizar o Ambiente, executar Ação. Finalmente Afirmar o esperado.\nEvitar testar detalhes de implementação (testar o que faz, não tanto como faz)\nÉ melhor pedir perdão do que permissão (ex.: executar a função, em vez de verificar se é uma função).\nOs testes devem refletir as histórias dos usuários (da especificação, spec)."
+  }
+]

@@ -10,7 +10,7 @@
 <link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
   <meta name="generator" content="quarto-1.4.549">
 
-  <title>Testing en Laboratoria</title>
+  <title>Testes em Laboratoria</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
@@ -325,118 +325,112 @@
     <div class="slides">
 
 <section id="title-slide" class="quarto-title-block center">
-  <h1 class="title">Testing en Laboratoria</h1>
+  <h1 class="title">Testes em Laboratoria</h1>
 
 <div class="quarto-title-authors">
 </div>
 
 </section>
 <section>
-<section id="testing" class="title-slide slide level1 center">
-<h1>Testing</h1>
-<p><a href="./Activate.pt.html#">disponível em Portugues</a></p>
-<p>Testing es el proceso de asegurar la calidad del software, revelando su solidez en cada ejecución.</p>
-<p><img data-src="./img/jest-js-icon.svg" alt="Jest Logo" height="200"></p>
+<section id="testando" class="title-slide slide level1 center">
+<h1>Testando</h1>
+<p>O teste é o processo de garantir a qualidade do software, revelando sua solidez a cada execução.</p>
+<p><img data-src="./img/jest-js-icon.svg" alt="Logo Jest" height="200"></p>
 <p><strong>&lt; Laboratoria &gt;</strong></p>
 </section>
-<section id="por-qué-la-mayoría-de-lxs-desarrolladorxs-temen-realizar-cambios-continuos-en-su-código-tienen-miedo-de-romperlo-por-qué-tienen-miedo-de-romperlo-porque-no-tienen-test." class="slide level2">
-<h2><em>“¿Por qué la mayoría de lxs desarrolladorxs temen realizar cambios continuos en su código? ¡Tienen miedo de romperlo! ¿Por qué tienen miedo de romperlo? Porque no tienen test.”</em></h2>
+<section id="por-que-a-maioria-dos-desenvolvedores-tem-medo-de-fazer-mudanças-contínuas-em-seu-código-eles-têm-medo-de-quebrá-lo-por-que-eles-têm-medo-de-quebrá-lo-porque-eles-não-têm-testes." class="slide level2">
+<h2><em>“Por que a maioria dos desenvolvedores tem medo de fazer mudanças contínuas em seu código? Eles têm medo de quebrá-lo! Por que eles têm medo de quebrá-lo? Porque eles não têm testes.”</em></h2>
 <p>–Robert C. Martin, Clean Coder, The: A Code of Conduct for Professional Programmers</p>
 </section>
-<section id="función-suma" class="slide level2">
-<h2>Función Suma</h2>
-<p><img data-src="./img/funcion_suma.svg" style="height:100.0%" alt="Función suma"></p>
+<section id="função-soma" class="slide level2">
+<h2>Função Soma</h2>
+<p><img data-src="./img/funcion_suma.svg" style="height:100.0%" alt="Função soma"></p>
 </section></section>
 <section>
-<section id="historias-de-terror" class="title-slide slide level1 center">
-<h1>Historias de Terror <br> 👻 💀 👻</h1>
+<section id="histórias-de-terror" class="title-slide slide level1 center">
+<h1>Histórias de Terror <br> 👻 💀 👻</h1>
 
 </section>
 <section id="ariane-5-1996" class="slide level2">
 <h2>Ariane 5 (1996)</h2>
-<p>El cohete Ariane 5 explotó 40 segundos después de su lanzamiento debido a un error en el software. El error fue causado por la conversión de un número de 64 bits a un número de 16 bits, lo que resultó en un desbordamiento de enteros.</p>
-<p><em>Con tests, este error podría haber sido detectado antes del lanzamiento.</em></p>
+<p>O foguete Ariane 5 explodiu 40 segundos após seu lançamento devido a um erro de software. O erro foi causado pela conversão de um número de 64 bits para um número de 16 bits, resultando em um estouro de inteiro.</p>
+<p><em>Com testes, esse erro poderia ter sido detectado antes do lançamento.</em></p>
 </section>
 <section id="therac-25-1985-1987" class="slide level2">
 <h2>Therac-25 (1985-1987)</h2>
-<p>El Therac-25 fue un dispositivo de radioterapia utilizado para el tratamiento de cáncer. Debido a errores en el software y la falta de testing adecuado, se produjeron varios incidentes en los que los pacientes recibieron dosis de radiación letales.</p>
-<p><em>Con tests, estos errores podrían haber sido detectados antes de que el dispositivo fuera utilizado en pacientes.</em></p>
+<p>O Therac-25 foi um dispositivo de radioterapia usado para tratar o câncer. Devido a erros de software e falta de testes adequados, ocorreram vários incidentes em que os pacientes receberam doses letais de radiação.</p>
+<p><em>Com testes, esses erros poderiam ter sido detectados antes do dispositivo ser usado em pacientes.</em></p>
 </section>
 <section id="knight-capital-group-2012" class="slide level2">
 <h2>Knight Capital Group (2012)</h2>
-<p>La empresa de trading de alta frecuencia Knight Capital Group perdió $440 millones en 45 minutos debido a un error en el software. El error fue causado por una actualización de software que no fue probada adecuadamente, lo que llevó a la ejecución de operaciones no deseadas.</p>
-<p><em>Con los tests adecuados, este error podría haber sido detectado antes de que el software fuera puesto en producción.</em></p>
+<p>A empresa de negociação de alta frequência Knight Capital Group perdeu US$ 440 milhões em 45 minutos devido a um erro de software. O erro foi causado por uma atualização de software que não foi devidamente testada, levando à execução de operações indesejadas.</p>
+<p><em>Com os testes adequados, esse erro poderia ter sido detectado antes do software ser colocado em produção.</em></p>
 </section></section>
 <section>
-<section id="cultura-de-testing-en-empresas" class="title-slide slide level1 center">
-<h1>Cultura de Testing en Empresas</h1>
+<section id="cultura-de-testes-nas-empresas" class="title-slide slide level1 center">
+<h1>Cultura de Testes nas Empresas</h1>
 
 </section>
 <section id="google" class="slide level2">
 <h2>Google</h2>
-<p>Google es conocido por realizar extensas pruebas en sus productos y servicios, como Google Search, Gmail y Android. Utilizan un enfoque llamado “Testing on the Toilet” (Pruebas en el Baño), donde promueven la cultura de pruebas entre sus desarrolladores. <br><br>🚽</p>
+<p>O Google é conhecido por realizar extensos testes em seus produtos e serviços, como o Google Search, Gmail e Android. Eles usam uma abordagem chamada “Testing on the Toilet” (Testes no Banheiro), onde promovem a cultura de testes entre seus desenvolvedores. <br><br>🚽</p>
 </section>
 <section id="facebook" class="slide level2">
 <h2>Facebook</h2>
-<p>Facebook utiliza un enfoque llamado “Test-Driven Development” (Desarrollo Dirigido por Pruebas) para desarrollar sus productos. Esto significa que escriben pruebas antes de escribir el código, lo que les permite asegurarse de que el código cumple con los requisitos antes de ser implementado.</p>
+<p>O Facebook usa uma abordagem chamada “Test-Driven Development” (Desenvolvimento Orientado por Testes) para desenvolver seus produtos. Isso significa que eles escrevem testes antes de escrever o código, o que lhes permite garantir que o código atenda aos requisitos antes de ser implementado.</p>
 </section>
 <section id="amazon" class="slide level2">
 <h2>Amazon</h2>
-<p>Amazon utiliza un enfoque llamado “Chaos Engineering” (Ingeniería del Caos) para probar la resiliencia de sus sistemas. Esto implica la introducción de fallos en sus sistemas para ver cómo se comportan en situaciones inesperadas.</p>
-<p>Siguen enfoques de desarrollo orientados a pruebas para garantizar la calidad del software.</p>
+<p>A Amazon usa uma abordagem chamada “Chaos Engineering” (Engenharia do Caos) para testar a resiliência de seus sistemas. Isso envolve a introdução de falhas em seus sistemas para ver como eles se comportam em situações inesperadas.</p>
+<p>Eles seguem abordagens de desenvolvimento orientadas a testes para garantir a qualidade do software.</p>
 </section>
-<section id="beneficios-de-hacer-test" class="slide level2">
-<h2>Beneficios de hacer Test</h2>
+<section id="benefícios-de-fazer-testes" class="slide level2">
+<h2>Benefícios de fazer Testes</h2>
 <table>
+<colgroup>
+<col style="width: 47%">
+<col style="width: 52%">
+</colgroup>
 <tbody>
 <tr class="odd">
-<td>Detección temprana de errores</td>
-<td>Mejora de la calidad del software</td>
+<td>Detecção precoce de erros</td>
+<td>Melhoria da qualidade do software</td>
 </tr>
 <tr class="even">
-<td>Software más confiable</td>
-<td>Software mantenible</td>
+<td>Software mais confiável</td>
+<td>Software sustentável</td>
 </tr>
 <tr class="odd">
-<td>Ahorro de costos a largo plazo</td>
-<td>Mejora la documentación del código</td>
+<td>Economia de custos a longo prazo</td>
+<td>Melhora a documentação do código</td>
 </tr>
 </tbody>
 </table>
 </section></section>
-<section id="tipos-de-testing" class="title-slide slide level1 center">
-<h1>Tipos de Testing</h1>
-<p><em>Durante el bootcamp nos enfocamos en 3 tipos de test:</em></p>
+<section id="tipos-de-testes" class="title-slide slide level1 center">
+<h1>Tipos de Testes</h1>
+<p><em>Durante o bootcamp, nos concentramos em 3 tipos de teste:</em></p>
 <ul>
-<li><strong>Unit Testing</strong></li>
-<li><strong>Integration Testing</strong></li>
-<li><strong>End-to-End Testing</strong></li>
+<li><strong>Teste Unitário</strong></li>
+<li><strong>Teste de Integração</strong></li>
+<li><strong>Teste de Ponta a Ponta</strong></li>
 </ul>
 </section>
 
 <section>
-<section id="code-time" class="title-slide slide level1 center">
-<h1>Code Time</h1>
+<section id="hora-do-código" class="title-slide slide level1 center">
+<h1>Hora do Código</h1>
 
 </section>
-<section id="nos-vemos-en-test-camp" class="slide level2">
-<h2>¡Nos vemos en <em>Test Camp!</em></h2>
-<p>Nos reunimos algunos martes en los siguientes horarios:</p>
-<ul>
-<li><strong>México:</strong> 2:00pm - 3:30pm</li>
-<li><strong>Colombia, Ecuador, Perú:</strong> 3:00pm - 4:30pm</li>
-<li><strong>Bolivia:</strong> 4:00pm - 5:30pm</li>
-<li><strong>Chile:</strong> 5:00pm - 6:30pm</li>
-</ul>
-</section>
-<section id="únete-al-canal" class="slide level2">
-<h2>Únete al canal:</h2>
+<section id="te-vejo-no-test-camp" class="slide level2">
+<h2>Te vejo no <em>Test Camp!</em></h2>
+<h3 id="junte-se-ao-canal">Junte-se ao canal:</h3>
 <ul>
 <li><em>#test-camp</em></li>
 </ul>
 </section></section>
-<section id="gracias-thank-you-obrigado" class="title-slide slide level1 center">
-<h1>¡Gracias! <br> Thank you! <br> Obrigado!</h1>
+<section id="obrigado-thank-you-gracias" class="title-slide slide level1 center">
+<h1>Obrigado! <br> Thank you! <br> Gracias</h1>
 <div class="r-fit-text white">
 <p>&gt;&gt;</p>
 </div>
