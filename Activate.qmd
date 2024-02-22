@@ -8,6 +8,8 @@ format:
 
 # Testing
 
+[disponível em Portugues](./Activate.pt.qmd#)
+
 Testing es el proceso de asegurar la calidad del software, revelando su solidez en cada ejecución.
 
 ![](./img/jest-js-icon.svg){fig-alt="Jest Logo" height=200}
