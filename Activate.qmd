@@ -98,6 +98,7 @@ Nos reunimos algunos martes en los siguientes horarios:
    
 ### Otras referencias:
 
+- [Tests Unitarios](./UnitTest.qmd)
 - [Bootcamp Book](https://coda.io/d/Bootcamp-Book_dUrlCH0OK3j/Test-Camp_sujwe#_luLVH)
 - [Baseline Docs](./baseline_docs.md)
 - Esta documentación: <br> [https://github.com/Laboratoria/test-camp-docs](https://github.com/Laboratoria/test-camp-docs)

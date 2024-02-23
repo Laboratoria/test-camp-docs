@@ -2,7 +2,8 @@
 title: Test unitarios
 format: 
   revealjs:
-    theme: [moon, custom.scss]
+    theme: [simple, custom.scss]
+    transition: slide
 ---
 
 # Test unitarios

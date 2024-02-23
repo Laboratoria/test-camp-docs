@@ -1,0 +1,157 @@
+---
+title: Testes unitários
+format:
+  revealjs:
+    theme: [simple, custom.scss]
+    transition: slide
+---
+
+# Testes unitários
+
+![](./img/unit-test-intro.jpeg){fig-alt="Imagem do Teste Unitário" height=200}
+
+## O que são?
+
+São processos onde pequenas unidades de código funcional são testadas, (é um bloco de código
+que verifica a veracidade de um pequeno bloco de código isolado de uma aplicação,
+geralmente uma função)
+
+# Benefícios
+
+## Ajuda a detectar erros
+
+Se existem erros de entrada, saída ou na lógica, os testes nos ajudarão a detectá-los
+de maneira precoce.
+
+No desenvolvimento, muitas mudanças são feitas, os testes esperam os mesmos resultados,
+então também podemos detectar onde os erros ocorrem.
+
+## Documentação
+
+Os testes atuam como uma forma de documentação, pois se sabe exatamente o que se
+supõe que o código deve fazer.
+
+# Estratégias
+
+Com essas perguntas, podemos seguir estratégias para escrever testes unitários.
+
+## Validação de lógica
+
+- Os cálculos corretos são realizados?
+- O caminho correto é seguido com uma entrada correta?
+- Diferentes casos são cobertos pelas entradas fornecidas?
+
+### Exemplos
+
+- Considerando uma função que ordena alfabeticamente um array de palavras.
+
+function ordenarPalavras(palavras, ordem? = "ascendente") {
+  let copia = [...palavras];
+  copia.sort();
+  if (ordem === "descendente") {
+    copia.reverse();
+  }
+  return copia;
+}
+
+- O array está ordenado?
+- Ele ordena de forma descendente se receber descendente?
+
+
+## Validação de limites
+
+  Como ele responde a entradas típicas, casos limite ou entradas inválidas?
+
+### Exemplos
+
+- Considerando uma função que ordena alfabeticamente um array de palavras.
+
+function ordenarPalavras(palavras, ordem? = "ascendente") {
+  let copia = [...palavras];
+  copia.sort();
+  if (ordem === "descendente") {
+    copia.reverse();
+  }
+  return copia;
+}
+
+- O que acontece se o array estiver vazio, nulo ou indefinido?
+- O que acontece se o array contiver um tipo de dados diferente?
+
+## Tratamento de erros
+
+Quando há erros nas entradas, como o sistema responde?
+
+### Exemplos
+
+- Considerando uma função que ordena alfabeticamente um array de palavras.
+
+function ordenarPalavras(palavras, ordem? = "ascendente") {
+  let copia = [...palavras];
+  copia.sort();
+  if (ordem === "descendente") {
+    copia.reverse();
+  }
+  return copia;
+}
+
+- O que acontece se, em vez de enviar um array, enviar outro tipo de dado?
+
+
+## Características de um bom teste unitário
+
+- Rápido: Alguns projetos podem ter muitos testes unitários, é importante que
+demorem pouco para serem executados.
+- Isolados: É fundamental que sejam independentes, que não precisem de nenhum fator externo para
+funcionar.
+- Repetível: Deve sempre retornar o mesmo resultado em cada execução
+- Auto-validado: deve ser capaz de detectar por si só se passa ou não sem interação humana.
+- Oportuno: Escrever o teste não deve levar muito mais tempo do que o código que
+se deseja testar.
+
+# Cobertura
+
+Uma alta porcentagem de cobertura pode significar uma maior qualidade do código. No entanto, não pode determinar a qualidade do código. (Está tudo bem se você não atingir 100% de cobertura, não se pressione 😊)
+
+# Um pouco de terminologia
+
+Um componente importante ao escrever testes unitários é eliminar todas as dependências. Para fazer isso, nos deparamos com o termo **função mock**:
+
+Permite que você tenha um comportamento predefinido que substitui o comportamento real, capturando as chamadas para essas funções e substituindo sua implementação.
+
+É muito útil ao usar serviços de terceiros (como o Firebase)
+
+# Nomeando os testes
+
+O nome do seu teste deve considerar estas partes:
+
+    - O nome do método que será testado
+    - O cenário
+    - E o que se espera ao ser executado sob esse cenário
+
+## Exemplo:
+
+- Considerando uma função que ordena alfabeticamente um array de palavras.
+
+function ordenarPalavras(palavras, ordem? = "ascendente") {
+  let copia = [...palavras];
+  copia.sort();
+  if (ordem === "descendente") {
+    copia.reverse();
+  }
+  return copia;
+}
+
+Ordenar por nome array vazio retorna array vazio.
+
+
+### Por quê?
+
+Nomear de maneira padrão é importante porque expressa a intenção explícita de um teste
+
+# Bibliografia:
+
+- [O que é teste unitário? - Teste unitário explicado - AWS (amazon.com)](https://aws.amazon.com/what-is/unit-testing/)
+- [Melhores práticas para escrever testes unitários - .NET | Aprenda Microsoft)](https://learn.microsoft.com/en-us/dotnet/core/testing/unit-testing-best-practices)
+- [Funções Mock · Jest (jestjs.io)](https://jestjs.io/docs/mock-functions)
+- [Mocking em testes unitários - Code With Engineering Playbook (microsoft.github.io)](https://microsoft.github.io/code-with-engineering-playbook/automated-testing/unit-testing/mocking/#best-practices)

@@ -84,6 +84,7 @@ Eles seguem abordagens de desenvolvimento orientadas a testes para garantir a qu
 
 ### Otras referencias:
 
+- [Tests Unitarios](./UnitTest.pt.qmd)
 - [Bootcamp Book](https://coda.io/d/Bootcamp-Book_dUrlCH0OK3j/Test-Camp_sujwe#_luLVH)
 - [Baseline Docs](./baseline_docs.pt.md)
 - Esta documentación: <br> [https://github.com/Laboratoria/test-camp-docs](https://github.com/Laboratoria/test-camp-docs)
