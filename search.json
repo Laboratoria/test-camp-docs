@@ -130,7 +130,63 @@
     "href": "Activate.html#únete-al-canal",
     "title": "Testing en Laboratoria",
     "section": "Únete al canal:",
-    "text": "Únete al canal:\n\n#test-camp\n\nOtras referencias:\n\nBootcamp Book\nBaseline Docs\nEsta documentación:  https://github.com/Laboratoria/test-camp-docs"
+    "text": "Únete al canal:\n\n#test-camp\n\nOtras referencias:\n\nTests Unitarios\nBootcamp Book\nBaseline Docs\nEsta documentación:  https://github.com/Laboratoria/test-camp-docs"
+  },
+  {
+    "objectID": "UnitTest.pt.html#o-que-são",
+    "href": "UnitTest.pt.html#o-que-são",
+    "title": "Testes unitários",
+    "section": "O que são?",
+    "text": "O que são?\nSão processos onde pequenas unidades de código funcional são testadas, (é um bloco de código que verifica a veracidade de um pequeno bloco de código isolado de uma aplicação, geralmente uma função)"
+  },
+  {
+    "objectID": "UnitTest.pt.html#ajuda-a-detectar-erros",
+    "href": "UnitTest.pt.html#ajuda-a-detectar-erros",
+    "title": "Testes unitários",
+    "section": "Ajuda a detectar erros",
+    "text": "Ajuda a detectar erros\nSe existem erros de entrada, saída ou na lógica, os testes nos ajudarão a detectá-los de maneira precoce.\nNo desenvolvimento, muitas mudanças são feitas, os testes esperam os mesmos resultados, então também podemos detectar onde os erros ocorrem."
+  },
+  {
+    "objectID": "UnitTest.pt.html#documentação",
+    "href": "UnitTest.pt.html#documentação",
+    "title": "Testes unitários",
+    "section": "Documentação",
+    "text": "Documentação\nOs testes atuam como uma forma de documentação, pois se sabe exatamente o que se supõe que o código deve fazer."
+  },
+  {
+    "objectID": "UnitTest.pt.html#validação-de-lógica",
+    "href": "UnitTest.pt.html#validação-de-lógica",
+    "title": "Testes unitários",
+    "section": "Validação de lógica",
+    "text": "Validação de lógica\n\nOs cálculos corretos são realizados?\nO caminho correto é seguido com uma entrada correta?\nDiferentes casos são cobertos pelas entradas fornecidas?\n\nExemplos\n\nConsiderando uma função que ordena alfabeticamente um array de palavras.\n\nfunction ordenarPalavras(palavras, ordem? = “ascendente”) { let copia = […palavras]; copia.sort(); if (ordem === “descendente”) { copia.reverse(); } return copia; }\n\nO array está ordenado?\nEle ordena de forma descendente se receber descendente?"
+  },
+  {
+    "objectID": "UnitTest.pt.html#validação-de-limites",
+    "href": "UnitTest.pt.html#validação-de-limites",
+    "title": "Testes unitários",
+    "section": "Validação de limites",
+    "text": "Validação de limites\nComo ele responde a entradas típicas, casos limite ou entradas inválidas?\nExemplos\n\nConsiderando uma função que ordena alfabeticamente um array de palavras.\n\nfunction ordenarPalavras(palavras, ordem? = “ascendente”) { let copia = […palavras]; copia.sort(); if (ordem === “descendente”) { copia.reverse(); } return copia; }\n\nO que acontece se o array estiver vazio, nulo ou indefinido?\nO que acontece se o array contiver um tipo de dados diferente?"
+  },
+  {
+    "objectID": "UnitTest.pt.html#tratamento-de-erros",
+    "href": "UnitTest.pt.html#tratamento-de-erros",
+    "title": "Testes unitários",
+    "section": "Tratamento de erros",
+    "text": "Tratamento de erros\nQuando há erros nas entradas, como o sistema responde?\nExemplos\n\nConsiderando uma função que ordena alfabeticamente um array de palavras.\n\nfunction ordenarPalavras(palavras, ordem? = “ascendente”) { let copia = […palavras]; copia.sort(); if (ordem === “descendente”) { copia.reverse(); } return copia; }\n\nO que acontece se, em vez de enviar um array, enviar outro tipo de dado?"
+  },
+  {
+    "objectID": "UnitTest.pt.html#características-de-um-bom-teste-unitário",
+    "href": "UnitTest.pt.html#características-de-um-bom-teste-unitário",
+    "title": "Testes unitários",
+    "section": "Características de um bom teste unitário",
+    "text": "Características de um bom teste unitário\n\nRápido: Alguns projetos podem ter muitos testes unitários, é importante que demorem pouco para serem executados.\nIsolados: É fundamental que sejam independentes, que não precisem de nenhum fator externo para funcionar.\nRepetível: Deve sempre retornar o mesmo resultado em cada execução\nAuto-validado: deve ser capaz de detectar por si só se passa ou não sem interação humana.\nOportuno: Escrever o teste não deve levar muito mais tempo do que o código que se deseja testar."
+  },
+  {
+    "objectID": "UnitTest.pt.html#exemplo",
+    "href": "UnitTest.pt.html#exemplo",
+    "title": "Testes unitários",
+    "section": "Exemplo:",
+    "text": "Exemplo:\n\nConsiderando uma função que ordena alfabeticamente um array de palavras.\n\nfunction ordenarPalavras(palavras, ordem? = “ascendente”) { let copia = […palavras]; copia.sort(); if (ordem === “descendente”) { copia.reverse(); } return copia; }\nOrdenar por nome array vazio retorna array vazio.\nPor quê?\nNomear de maneira padrão é importante porque expressa a intenção explícita de um teste"
   },
   {
     "objectID": "Activate.pt.html#por-que-a-maioria-dos-desenvolvedores-tem-medo-de-fazer-mudanças-contínuas-em-seu-código-eles-têm-medo-de-quebrá-lo-por-que-eles-têm-medo-de-quebrá-lo-porque-eles-não-têm-testes.",
@@ -200,7 +256,7 @@
     "href": "Activate.pt.html#te-vejo-no-test-camp",
     "title": "Testes em Laboratoria",
     "section": "Te vejo no Test Camp!",
-    "text": "Te vejo no Test Camp!\nJunte-se ao canal:\n\n#test-camp\n\nOtras referencias:\n\nBootcamp Book\nBaseline Docs\nEsta documentación:  https://github.com/Laboratoria/test-camp-docs"
+    "text": "Te vejo no Test Camp!\nJunte-se ao canal:\n\n#test-camp\n\nOtras referencias:\n\nTests Unitarios\nBootcamp Book\nBaseline Docs\nEsta documentación:  https://github.com/Laboratoria/test-camp-docs"
   },
   {
     "objectID": "UnitTest.html#que-son",

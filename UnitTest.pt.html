@@ -10,7 +10,7 @@
 <link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
   <meta name="generator" content="quarto-1.4.549">
 
-  <title>Test unitarios</title>
+  <title>Testes unitários</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
@@ -325,158 +325,129 @@
     <div class="slides">
 
 <section id="title-slide" class="quarto-title-block center">
-  <h1 class="title">Test unitarios</h1>
+  <h1 class="title">Testes unitários</h1>
 
 <div class="quarto-title-authors">
 </div>
 
 </section>
 <section>
-<section id="test-unitarios" class="title-slide slide level1 center">
-<h1>Test unitarios</h1>
-<p><img data-src="./img/unit-test-intro.jpeg" alt="Unit Test Img" height="200"></p>
+<section id="testes-unitários" class="title-slide slide level1 center">
+<h1>Testes unitários</h1>
+<p><img data-src="./img/unit-test-intro.jpeg" alt="Imagem do Teste Unitário" height="200"></p>
 </section>
-<section id="que-son" class="slide level2">
-<h2>¿Que son?</h2>
-<p>Son procesos donde se prueba pequeñas unidades de código funcional, (es un bloque de código que verifica la veracidad de un pequeño, aislado bloque de código de una aplicación, comúnmente una función)</p>
+<section id="o-que-são" class="slide level2">
+<h2>O que são?</h2>
+<p>São processos onde pequenas unidades de código funcional são testadas, (é um bloco de código que verifica a veracidade de um pequeno bloco de código isolado de uma aplicação, geralmente uma função)</p>
 </section></section>
 <section>
-<section id="beneficios" class="title-slide slide level1 center">
-<h1>Beneficios</h1>
+<section id="benefícios" class="title-slide slide level1 center">
+<h1>Benefícios</h1>
 
 </section>
-<section id="ayuda-a-detectar-errores" class="slide level2">
-<h2>Ayuda a detectar errores</h2>
-<p>Si existen errores de entrada, salida o en la lógica las pruebas nos ayudaran a detectarlos de manera temprana.</p>
-<p>En el desarrollo se suelen realizar muchos cambios, las pruebas esperan los mismos resultados así que además podemos detectar donde surgen los errores.</p>
+<section id="ajuda-a-detectar-erros" class="slide level2">
+<h2>Ajuda a detectar erros</h2>
+<p>Se existem erros de entrada, saída ou na lógica, os testes nos ajudarão a detectá-los de maneira precoce.</p>
+<p>No desenvolvimento, muitas mudanças são feitas, os testes esperam os mesmos resultados, então também podemos detectar onde os erros ocorrem.</p>
 </section>
-<section id="documentación" class="slide level2">
-<h2>Documentación</h2>
-<p>Las pruebas actúan como una forma de documentación, ya que se sabe exactamente lo que s supone que debe de hacer el código.</p>
+<section id="documentação" class="slide level2">
+<h2>Documentação</h2>
+<p>Os testes atuam como uma forma de documentação, pois se sabe exatamente o que se supõe que o código deve fazer.</p>
 </section></section>
 <section>
-<section id="estrategias" class="title-slide slide level1 center">
-<h1>Estrategias</h1>
-<p>Con estas preguntas podemos seguir estrategias para escribir test unitarios.</p>
+<section id="estratégias" class="title-slide slide level1 center">
+<h1>Estratégias</h1>
+<p>Com essas perguntas, podemos seguir estratégias para escrever testes unitários.</p>
 </section>
-<section id="validación-de-lógica" class="slide level2">
-<h2>Validación de lógica</h2>
+<section id="validação-de-lógica" class="slide level2">
+<h2>Validação de lógica</h2>
 <ul>
-<li>¿Se realizan los cálculos correctos?</li>
-<li>¿Sigue el camino correcto con una entrada correcta?</li>
-<li>¿Están cubiertos distintos casos por las entradas proporcionadas?</li>
+<li>Os cálculos corretos são realizados?</li>
+<li>O caminho correto é seguido com uma entrada correta?</li>
+<li>Diferentes casos são cobertos pelas entradas fornecidas?</li>
 </ul>
-<h3 id="ejemplos">Ejemplos</h3>
+<h3 id="exemplos">Exemplos</h3>
 <ul>
-<li>Teniendo en cuenta una funcion que ordena alfabeticamente un arreglo de palabras.</li>
+<li>Considerando uma função que ordena alfabeticamente um array de palavras.</li>
 </ul>
-<pre><code>function ordenarPalabras(palabras, orden? = "asendente") {
-  let copia = [...palabras];
-  copia.sort();
-  if (orden === "descendente") {
-    copia.reverse();
-  }
-  return copia;
-}</code></pre>
+<p>function ordenarPalavras(palavras, ordem? = “ascendente”) { let copia = […palavras]; copia.sort(); if (ordem === “descendente”) { copia.reverse(); } return copia; }</p>
 <ul>
-<li>¿El arreglo esta ordenado?</li>
-<li>¿Se ordena desendente si recibe desendente?</li>
+<li>O array está ordenado?</li>
+<li>Ele ordena de forma descendente se receber descendente?</li>
 </ul>
 </section>
-<section id="validación-de-limites" class="slide level2">
-<h2>Validación de limites</h2>
-<p>¿Cómo responde a entradas típicas, casos límite o entradas no válidas?</p>
-<h3 id="ejemplos-1">Ejemplos</h3>
+<section id="validação-de-limites" class="slide level2">
+<h2>Validação de limites</h2>
+<p>Como ele responde a entradas típicas, casos limite ou entradas inválidas?</p>
+<h3 id="exemplos-1">Exemplos</h3>
 <ul>
-<li>Teniendo en cuenta una funcion que ordena alfabeticamente un arreglo de palabras.</li>
+<li>Considerando uma função que ordena alfabeticamente um array de palavras.</li>
 </ul>
-<pre><code>function ordenarPalabras(palabras, orden? = "asendente") {
-  let copia = [...palabras];
-  copia.sort();
-  if (orden === "descendente") {
-    copia.reverse();
-  }
-  return copia;
-}</code></pre>
+<p>function ordenarPalavras(palavras, ordem? = “ascendente”) { let copia = […palavras]; copia.sort(); if (ordem === “descendente”) { copia.reverse(); } return copia; }</p>
 <ul>
-<li>¿Que pasa si el arreglo esta vacio, nulo o undefinido?</li>
-<li>¿Que pasa si el arreglo contiene un tipo de datos distintos?</li>
+<li>O que acontece se o array estiver vazio, nulo ou indefinido?</li>
+<li>O que acontece se o array contiver um tipo de dados diferente?</li>
 </ul>
 </section>
-<section id="manejo-de-errores" class="slide level2">
-<h2>Manejo de errores</h2>
-<p>Cuando hay errores en las entradas, ¿cómo responde el sistema?</p>
-<h3 id="ejemplos-2">Ejemplos</h3>
+<section id="tratamento-de-erros" class="slide level2">
+<h2>Tratamento de erros</h2>
+<p>Quando há erros nas entradas, como o sistema responde?</p>
+<h3 id="exemplos-2">Exemplos</h3>
 <ul>
-<li>Teniendo en cuenta una funcion que ordena alfabeticamente un arreglo de palabras.</li>
+<li>Considerando uma função que ordena alfabeticamente um array de palavras.</li>
 </ul>
-<pre><code>function ordenarPalabras(palabras, orden? = "asendente") {
-  let copia = [...palabras];
-  copia.sort();
-  if (orden === "descendente") {
-    copia.reverse();
-  }
-  return copia;
-}</code></pre>
+<p>function ordenarPalavras(palavras, ordem? = “ascendente”) { let copia = […palavras]; copia.sort(); if (ordem === “descendente”) { copia.reverse(); } return copia; }</p>
 <ul>
-<li>¿Que pasa si en lugar de enviar un arreglo se envia otro tipo de dato?</li>
+<li>O que acontece se, em vez de enviar um array, enviar outro tipo de dado?</li>
 </ul>
 </section>
-<section id="características-de-una-buena-prueba-unitaria" class="slide level2">
-<h2>Características de una buena prueba unitaria</h2>
+<section id="características-de-um-bom-teste-unitário" class="slide level2">
+<h2>Características de um bom teste unitário</h2>
 <ul>
-<li>Rápida: Algunos proyectos pueden tener muchas pruebas unitarias, es importante que tarden poco en ejecutarse.</li>
-<li>Aisladas: Es clave que sean independientes, que no necesiten ningún factor externo para funcionar.<br>
-</li>
-<li>Repetible: Que siempre devuelva el mismo resultado en cada ejecución</li>
-<li>Auto-validada: debe poder detectar por sí misma si pasa o no sin interacción humana.</li>
-<li>Oportuna: Escribir la prueba no debería de tomar mucho más Iempo que el código que se quiere probar.</li>
+<li>Rápido: Alguns projetos podem ter muitos testes unitários, é importante que demorem pouco para serem executados.</li>
+<li>Isolados: É fundamental que sejam independentes, que não precisem de nenhum fator externo para funcionar.</li>
+<li>Repetível: Deve sempre retornar o mesmo resultado em cada execução</li>
+<li>Auto-validado: deve ser capaz de detectar por si só se passa ou não sem interação humana.</li>
+<li>Oportuno: Escrever o teste não deve levar muito mais tempo do que o código que se deseja testar.</li>
 </ul>
 </section></section>
 <section id="cobertura" class="title-slide slide level1 center">
 <h1>Cobertura</h1>
-<p>Un alto porcentaje de cobertura puede significar una mayor calidad del código. Sin embargo, no puede determinar la calidad del código. (Está bien si no alcanzas el 100% de cobertura no te presiones 😊)</p>
+<p>Uma alta porcentagem de cobertura pode significar uma maior qualidade do código. No entanto, não pode determinar a qualidade do código. (Está tudo bem se você não atingir 100% de cobertura, não se pressione 😊)</p>
 </section>
 
-<section id="un-poco-de-terminología" class="title-slide slide level1 center">
-<h1>Un poco de terminología</h1>
-<p>Un componente importante al escribir pruebas unitarias es eliminar todas las dependencias para hacer eso nos toparemos con el termino <strong>mock function</strong>:</p>
-<p>Te permite tener un comportamiento predeterminado que sustituye al comportamiento real, capturando las llamadas a esas funciones y sustituyendo su implementación.</p>
-<p>Es muy útil al momento de hacer uso de servicios de terceros (como Firebase)</p>
+<section id="um-pouco-de-terminologia" class="title-slide slide level1 center">
+<h1>Um pouco de terminologia</h1>
+<p>Um componente importante ao escrever testes unitários é eliminar todas as dependências. Para fazer isso, nos deparamos com o termo <strong>função mock</strong>:</p>
+<p>Permite que você tenha um comportamento predefinido que substitui o comportamento real, capturando as chamadas para essas funções e substituindo sua implementação.</p>
+<p>É muito útil ao usar serviços de terceiros (como o Firebase)</p>
 </section>
 
 <section>
-<section id="nombrando-las-pruebas" class="title-slide slide level1 center">
-<h1>Nombrando las pruebas</h1>
-<p>El nombre de tu prueba debería considerar estas partes:</p>
-<pre><code>- El nombre del método que será probado 
-- El escenario
-- Y lo que se esperar al ser ejecutado bajo ese escenario </code></pre>
+<section id="nomeando-os-testes" class="title-slide slide level1 center">
+<h1>Nomeando os testes</h1>
+<p>O nome do seu teste deve considerar estas partes:</p>
+<pre><code>- O nome do método que será testado
+- O cenário
+- E o que se espera ao ser executado sob esse cenário</code></pre>
 </section>
-<section id="ejemplo" class="slide level2">
-<h2>Ejemplo:</h2>
+<section id="exemplo" class="slide level2">
+<h2>Exemplo:</h2>
 <ul>
-<li>Teniendo en cuenta una funcion que ordena alfabeticamente un arreglo de palabras.</li>
+<li>Considerando uma função que ordena alfabeticamente um array de palavras.</li>
 </ul>
-<pre><code>function ordenarPalabras(palabras, orden? = "asendente") {
-  let copia = [...palabras];
-  copia.sort();
-  if (orden === "descendente") {
-    copia.reverse();
-  }
-  return copia;
-}</code></pre>
-<p>Ordenar por nombre arreglo vacío regresa arreglo vacío.</p>
-<h3 id="por-qué">¿Por qué?</h3>
-<p>Nombrar de manera estándar es importante porque expresa la intención explicita de una prueba</p>
+<p>function ordenarPalavras(palavras, ordem? = “ascendente”) { let copia = […palavras]; copia.sort(); if (ordem === “descendente”) { copia.reverse(); } return copia; }</p>
+<p>Ordenar por nome array vazio retorna array vazio.</p>
+<h3 id="por-quê">Por quê?</h3>
+<p>Nomear de maneira padrão é importante porque expressa a intenção explícita de um teste</p>
 </section></section>
-<section id="bibliografía" class="title-slide slide level1 center">
-<h1>Bibliografía:</h1>
+<section id="bibliografia" class="title-slide slide level1 center">
+<h1>Bibliografia:</h1>
 <ul>
-<li><a href="https://aws.amazon.com/what-is/unit-testing/">What is Unit Testing? - Unit Testing Explained - AWS (amazon.com)</a></li>
-<li><a href="https://learn.microsoft.com/en-us/dotnet/core/testing/unit-testing-best-practices">Best practices for writing unit tests - .NET | Microsoft Learn )</a></li>
-<li><a href="https://jestjs.io/docs/mock-functions">Mock Functions · Jest (jestjs.io)</a></li>
-<li><a href="https://microsoft.github.io/code-with-engineering-playbook/automated-testing/unit-testing/mocking/#best-practices">Mocking in Unit Tests - Code With Engineering Playbook (microsoft.github.io)</a></li>
+<li><a href="https://aws.amazon.com/what-is/unit-testing/">O que é teste unitário? - Teste unitário explicado - AWS (amazon.com)</a></li>
+<li><a href="https://learn.microsoft.com/en-us/dotnet/core/testing/unit-testing-best-practices">Melhores práticas para escrever testes unitários - .NET | Aprenda Microsoft)</a></li>
+<li><a href="https://jestjs.io/docs/mock-functions">Funções Mock · Jest (jestjs.io)</a></li>
+<li><a href="https://microsoft.github.io/code-with-engineering-playbook/automated-testing/unit-testing/mocking/#best-practices">Mocking em testes unitários - Code With Engineering Playbook (microsoft.github.io)</a></li>
 </ul>
 
 <div class="quarto-auto-generated-content">
