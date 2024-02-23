@@ -1,7 +1,7 @@
 
-Test Camp Baseline Docs
+# Test Camp Baseline Docs
 
-Sesión de Activación: 30 minutos - 60 minutos (Presentación con Slides y/o Demo)
+## Sesión de Activación: 30 minutos - 60 minutos (Presentación con Slides y/o Demo)
 
 La importancia de las pruebas en JavaScript:
 - Garantizar la calidad del código desde el principio.
@@ -69,4 +69,3 @@ PROYECTO 01 - TEXT ANALYZER
 - Identificar pruebas ya implementadas.
 - Analizar qué testea y su importancia.
 - Familiarizarse con los conceptos básicos (estructuras y comandos).
-Propuesta: Tener un temario o guía a desglose por cada proyecto (tips de qué testear y/o guías específicas para la estructura lógica / proyecto / framework en el que estén - TO DO: Propuesta en fork - BC Github.

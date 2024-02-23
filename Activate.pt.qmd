@@ -10,19 +10,17 @@ format:
 
 O teste é o processo de garantir a qualidade do software, revelando sua solidez a cada execução.
 
-![](./img/jest-js-icon.svg){fig-alt="Logo Jest" height=200}
-
+![](./img/jest-js-icon.svg){fig-alt="Logo Jest" height="200"}
 
 **\< Laboratoria \>**
 
-
-## _“Por que a maioria dos desenvolvedores tem medo de fazer mudanças contínuas em seu código? Eles têm medo de quebrá-lo! Por que eles têm medo de quebrá-lo? Porque eles não têm testes.”_
+## *“Por que a maioria dos desenvolvedores tem medo de fazer mudanças contínuas em seu código? Eles têm medo de quebrá-lo! Por que eles têm medo de quebrá-lo? Porque eles não têm testes.”*
 
 --Robert C. Martin, Clean Coder, The: A Code of Conduct for Professional Programmers
 
 ## Função Soma
 
-![](./img/funcion_suma.svg){fig-alt="Função soma" height=100%}
+![](./img/funcion_suma.svg){fig-alt="Função soma" height="100%"}
 
 # Histórias de Terror <br> 👻 💀 👻
 
@@ -38,13 +36,11 @@ O Therac-25 foi um dispositivo de radioterapia usado para tratar o câncer. Devi
 
 *Com testes, esses erros poderiam ter sido detectados antes do dispositivo ser usado em pacientes.*
 
-
 ## Knight Capital Group (2012)
 
-A empresa de negociação de alta frequência Knight Capital Group perdeu US$ 440 milhões em 45 minutos devido a um erro de software. O erro foi causado por uma atualização de software que não foi devidamente testada, levando à execução de operações indesejadas.
+A empresa de negociação de alta frequência Knight Capital Group perdeu US\$ 440 milhões em 45 minutos devido a um erro de software. O erro foi causado por uma atualização de software que não foi devidamente testada, levando à execução de operações indesejadas.
 
 *Com os testes adequados, esse erro poderia ter sido detectado antes do software ser colocado em produção.*
-
 
 # Cultura de Testes nas Empresas
 
@@ -62,18 +58,17 @@ A Amazon usa uma abordagem chamada "Chaos Engineering" (Engenharia do Caos) para
 
 Eles seguem abordagens de desenvolvimento orientadas a testes para garantir a qualidade do software.
 
-
 ## Benefícios de fazer Testes
 
-|                                |                                    |
-|--------------------------------|------------------------------------|
-| Detecção precoce de erros      | Melhoria da qualidade do software  |
-| Software mais confiável        | Software sustentável               |
-| Economia de custos a longo prazo | Melhora a documentação do código   |
+|                                  |                                   |
+|----------------------------------|-----------------------------------|
+| Detecção precoce de erros        | Melhoria da qualidade do software |
+| Software mais confiável          | Software sustentável              |
+| Economia de custos a longo prazo | Melhora a documentação do código  |
 
 # Tipos de Testes
 
-_Durante o bootcamp, nos concentramos em 3 tipos de teste:_
+*Durante o bootcamp, nos concentramos em 3 tipos de teste:*
 
 -   **Teste Unitário**
 -   **Teste de Integração**
@@ -83,12 +78,18 @@ _Durante o bootcamp, nos concentramos em 3 tipos de teste:_
 
 ## Te vejo no *Test Camp!*
 
-### Junte-se ao canal: 
+### Junte-se ao canal:
 
- - _#test-camp_
+-   *#test-camp*
+
+### Otras referencias:
+
+- [Bootcamp Book](https://coda.io/d/Bootcamp-Book_dUrlCH0OK3j/Test-Camp_sujwe#_luLVH)
+- [Baseline Docs](./baseline_docs.pt.md)
+- Esta documentación: <br> [https://github.com/Laboratoria/test-camp-docs](https://github.com/Laboratoria/test-camp-docs)
 
 # Obrigado! <br> Thank you! <br> Gracias
 
-::: { .r-fit-text .white } 
+::: {.r-fit-text .white}
 \>\>
 :::
